@@ -29,7 +29,7 @@
                     <ul class="navbar-nav">
                         <!-- Home -->
                         <li class="nav-item">
-                            <a class="nav-link active" href="home.php" aria-current="page">Home</a>
+                            <a class="nav-link active" href="index.php" aria-current="page">Home</a>
                         </li>
                         <!-- End Home -->
 

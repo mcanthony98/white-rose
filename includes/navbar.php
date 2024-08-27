@@ -7,8 +7,8 @@
     <div class="container">
         <nav class="js-mega-menu navbar-nav-wrap">
             <!-- Default Logo -->
-            <a class="navbar-brand" href="index.html" aria-label="White Rose Cleaners">
-                <img class="navbar-brand-logo" src="assets/svg/logos/logo.svg" alt="Logo">
+            <a class="navbar-brand" href="index.php" aria-label="White Rose Cleaners">
+                <img class="navbar-brand-logo p-0 m-0" src="assets/img/wrc/logo-no-bg.png" style="height: 60px;" alt="Logo">
             </a>
             <!-- End Default Logo -->
 

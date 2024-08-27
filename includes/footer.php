@@ -7,7 +7,7 @@
                 <!-- Logo -->
                 <div class="mb-5">
                     <a class="navbar-brand" href="home.php" aria-label="White Rose Cleaners">
-                        <img class="navbar-brand-logo" src="assets/svg/logos/logo.svg" alt="Logo">
+                        <img class="navbar-brand-logo" src="assets/img/wrc/logo-no-bg.png" style="height: 60px;" alt="Logo">
                     </a>
                 </div>
                 <!-- End Logo -->
@@ -120,7 +120,7 @@
                     </li>
                     <li class="list-inline-item">
                         <a class="btn btn-soft-secondary btn-xs btn-icon" href="#">
-                            <i class="bi-github"></i>
+                            <i class="bi-instagram"></i>
                         </a>
                     </li>
                 </ul>

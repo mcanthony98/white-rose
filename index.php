@@ -9,6 +9,33 @@
     <!-- Head Content -->
     <?php include 'includes/head-content.php'; ?>
 
+    <style>
+        /* Hero Overlay */
+        .d-lg-flex.position-relative {
+            position: relative;
+            background-image: url('assets/img/wrc/hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+        }
+
+        .d-lg-flex.position-relative::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .container.d-lg-flex.align-items-lg-center.justify-content-center {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -19,7 +46,7 @@
     <!-- ========== MAIN CONTENT ========== -->
 
     <!-- Hero -->
-    <div class="d-lg-flex position-relative" style="background-image: url('assets/img/750x750/img2.jpg'); background-size: cover; background-position: center; height: 80vh;">
+    <div class="d-lg-flex position-relative" style="background-image: url('assets/img/wrc/hero.jpg'); background-size: cover; background-position: center; height: 80vh;">
         <div class="container d-lg-flex align-items-lg-center justify-content-center content-space-t-3 content-space-lg-0 min-vh-lg-50">
             <!-- Heading -->
             <div class="w-100 text-center text-white">
@@ -62,7 +89,7 @@
                 <!-- SVG Element -->
                 <div class="position-relative mx-auto" style="max-width: 28rem; min-height: 30rem;">
                     <figure class="position-absolute top-0 end-0 zi-2 me-10" data-aos="fade-up">
-                        <img src="assets/img/450x450/img1.jpg" class="img-fluid" alt="Quality Cleaning Services">
+                        <img src="assets/img/wrc/img-19.jpg" class="img-fluid" alt="Quality Cleaning Services">
                     </figure>
                 </div>
                 <!-- End SVG Element -->
@@ -227,6 +254,13 @@
 
     <!-- Testimonials -->
     <div class="container content-space-1 content-space-md-3">
+        <!-- Heading -->
+        <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+            <h2 class="h1">
+                What Our Clients Say
+            </h2>
+        </div>
+        <!-- End Heading -->
         <!-- Swiper Slider -->
         <div class="js-swiper-single-testimonials swiper">
             <div class="swiper-wrapper">
@@ -235,7 +269,7 @@
                     <!-- Blockquote -->
                     <figure class="w-md-65 text-center mx-md-auto">
                         <div class="mb-3">
-                            <img class="avatar avatar-xl avatar-circle" src="assets/img/160x160/img10.jpg" alt="Customer Testimonial">
+                            <img class="avatar avatar-xl avatar-circle" src="assets/img/wrc/user.png" alt="Customer Testimonial">
                         </div>
 
                         <blockquote class="blockquote">“White Rose Cleaners transformed our office into a spotless environment. Their attention to detail is unmatched!”</blockquote>
@@ -244,8 +278,6 @@
                             Sarah Thompson
                             <span class="blockquote-footer-source">Office Manager, London</span>
                         </figcaption>
-
-                        <img class="avatar avatar-xl avatar-4x3" src="assets/svg/brands/mailchimp-primary.svg" alt="Company Logo">
                     </figure>
                     <!-- End Blockquote -->
                 </div>
@@ -256,7 +288,7 @@
                     <!-- Blockquote -->
                     <figure class="w-md-65 text-center mx-md-auto">
                         <div class="mb-3">
-                            <img class="avatar avatar-xl avatar-circle" src="assets/img/160x160/img4.jpg" alt="Customer Testimonial">
+                            <img class="avatar avatar-xl avatar-circle" src="assets/img/wrc/user.png" alt="Customer Testimonial">
                         </div>
 
                         <blockquote class="blockquote">“The team from White Rose Cleaners is incredibly professional and efficient. My house has never looked better!”</blockquote>
@@ -265,8 +297,6 @@
                             James Wilkins
                             <span class="blockquote-footer-source">Homeowner, Manchester</span>
                         </figcaption>
-
-                        <img class="avatar avatar-xl avatar-4x3" src="assets/svg/brands/mailchimp-primary.svg" alt="Company Logo">
                     </figure>
                     <!-- End Blockquote -->
                 </div>
@@ -277,7 +307,7 @@
                     <!-- Blockquote -->
                     <figure class="w-md-65 text-center mx-md-auto">
                         <div class="mb-3">
-                            <img class="avatar avatar-xl avatar-circle" src="assets/img/160x160/img9.jpg" alt="Customer Testimonial">
+                            <img class="avatar avatar-xl avatar-circle" src="assets/img/wrc/user.png" alt="Customer Testimonial">
                         </div>
 
                         <blockquote class="blockquote">“I highly recommend White Rose Cleaners for their impeccable service and customer care. They are simply the best!”</blockquote>
@@ -298,7 +328,7 @@
                     <!-- Blockquote -->
                     <figure class="w-md-65 text-center mx-md-auto">
                         <div class="mb-3">
-                            <img class="avatar avatar-xl avatar-circle" src="assets/img/160x160/img5.jpg" alt="Customer Testimonial">
+                            <img class="avatar avatar-xl avatar-circle" src="assets/img/wrc/user.png" alt="Customer Testimonial">
                         </div>
 
                         <blockquote class="blockquote">“Their eco-friendly cleaning products made a huge difference in my home. Highly recommended!”</blockquote>
@@ -338,34 +368,34 @@
 
         <div class="row gx-3">
             <div class="col mb-3">
-                <div class="bg-img-start" style="background-image: url(assets/img/480x320/img17.jpg); height: 15rem;" alt="Commercial Office Cleaning"></div>
+                <div class="bg-img-start" style="background-image: url(assets/img/wrc/img-3.jpg); height: 15rem;" alt="Commercial Office Cleaning"></div>
             </div>
             <!-- End Col -->
 
             <div class="col-3 d-none d-md-block mb-3">
-                <div class="bg-img-start" style="background-image: url(assets/img/480x320/img6.jpg); height: 15rem;" alt="Residential Cleaning"></div>
+                <div class="bg-img-start" style="background-image: url(assets/img/wrc/img-7.jpg); height: 15rem;" alt="Residential Cleaning"></div>
             </div>
             <!-- End Col -->
 
             <div class="col mb-3">
-                <div class="bg-img-start" style="background-image: url(assets/img/480x320/img14.jpg); height: 15rem;" alt="Specialized Carpet Cleaning"></div>
+                <div class="bg-img-start" style="background-image: url(assets/img/wrc/img-9.jpg); height: 15rem;" alt="Specialized Carpet Cleaning"></div>
             </div>
             <!-- End Col -->
 
             <div class="w-100"></div>
 
             <div class="col mb-3 mb-md-0">
-                <div class="bg-img-start" style="background-image: url(assets/img/480x320/img25.jpg); height: 15rem;" alt="Industrial Cleaning Project"></div>
+                <div class="bg-img-start" style="background-image: url(assets/img/wrc/img-18.jpg); height: 15rem;" alt="Industrial Cleaning Project"></div>
             </div>
             <!-- End Col -->
 
             <div class="col-4 d-none d-md-block mb-3 mb-md-0">
-                <div class="bg-img-start" style="background-image: url(assets/img/480x320/img16.jpg); height: 15rem;" alt="Event Space Cleaning"></div>
+                <div class="bg-img-start" style="background-image: url(assets/img/wrc/img-4.jpg); height: 15rem;" alt="Event Space Cleaning"></div>
             </div>
             <!-- End Col -->
 
             <div class="col">
-                <div class="bg-img-start" style="background-image: url(assets/img/480x320/img12.jpg); height: 15rem;" alt="Retail Space Cleaning"></div>
+                <div class="bg-img-start" style="background-image: url(assets/img/wrc/img-15.jpg); height: 15rem;" alt="Retail Space Cleaning"></div>
             </div>
             <!-- End Col -->
         </div>
@@ -387,7 +417,7 @@
             <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
                 <!-- Card -->
                 <a class="card card-transition h-100" href="single-blog.php?blog=cleaning-tips">
-                    <img class="card-img-top" src="assets/img/500x280/img9.jpg" alt="Cleaning Tips">
+                    <img class="card-img-top" src="assets/img/wrc/img-20.jpg" alt="Cleaning Tips">
                     <div class="card-body">
                         <span class="card-subtitle text-primary">Tips</span>
                         <h5 class="card-text lh-base">Top Cleaning Tips for a Spotless Home</h5>
@@ -399,7 +429,7 @@
             <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
                 <!-- Card -->
                 <a class="card card-transition h-100" href="single-blog.php?blog=eco-friendly">
-                    <img class="card-img-top" src="assets/img/500x280/img10.jpg" alt="Eco-friendly Cleaning">
+                    <img class="card-img-top" src="assets/img/wrc/img-24.jpg" alt="Eco-friendly Cleaning">
                     <div class="card-body">
                         <span class="card-subtitle text-primary">Eco-Friendly</span>
                         <h5 class="card-text lh-base">The Benefits of Eco-Friendly Cleaning Products</h5>
@@ -411,7 +441,7 @@
             <div class="col-sm-6 col-lg-3 mb-3 mb-sm-0">
                 <!-- Card -->
                 <a class="card card-transition h-100" href="single-blog.php?blog=commercial-cleaning">
-                    <img class="card-img-top" src="assets/img/500x280/img11.jpg" alt="Commercial Cleaning">
+                    <img class="card-img-top" src="assets/img/wrc/img-25.jpg" alt="Commercial Cleaning">
                     <div class="card-body">
                         <span class="card-subtitle text-primary">Business</span>
                         <h5 class="card-text lh-base">Why Regular Office Cleaning is Crucial</h5>
@@ -423,7 +453,7 @@
             <div class="col-sm-6 col-lg-3">
                 <!-- Card -->
                 <a class="card card-transition h-100" href="single-blog.php?blog=holiday-cleaning">
-                    <img class="card-img-top" src="assets/img/500x280/img12.jpg" alt="Holiday Cleaning">
+                    <img class="card-img-top" src="assets/img/wrc/img-16.jpg" alt="Holiday Cleaning">
                     <div class="card-body">
                         <span class="card-subtitle text-primary">Holiday</span>
                         <h5 class="card-text lh-base">How to Prepare Your Home for the Holidays</h5>

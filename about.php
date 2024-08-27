@@ -28,7 +28,9 @@
 
         <div class="row justify-content-center">
             <div class="col-12">
-                <img class="img-fluid rounded-2" src="assets/img/wrc/about.jpg" alt="Professional Cleaning Services">
+                <div class="col-12 text-center">
+                    <img class="img-fluid rounded-2" src="assets/img/wrc/about.jpg" style="height: 450px;" alt="Professional Cleaning Services">
+                </div>
             </div>
         </div>
     </div>
@@ -291,7 +293,7 @@
                 <div class="card card-transition h-100">
                     <div class="card-body">
                         <div class="avatar avatar-lg avatar-circle mb-4">
-                            <img class="avatar-img" src="assets/img/160x160/img7.jpg" alt="Christina Kray">
+                            <img class="avatar-img" src="assets/img/wrc/user.png" alt="Christina Kray">
                         </div>
 
                         <span class="card-subtitle">Founder / CEO</span>
@@ -307,7 +309,7 @@
                 <div class="card card-transition h-100">
                     <div class="card-body">
                         <div class="avatar avatar-lg avatar-circle mb-4">
-                            <img class="avatar-img" src="assets/img/160x160/img3.jpg" alt="Jeff Fisher">
+                            <img class="avatar-img" src="assets/img/wrc/user.png" alt="Jeff Fisher">
                         </div>
 
                         <span class="card-subtitle">Project Manager</span>
@@ -323,7 +325,7 @@
                 <div class="card card-transition h-100">
                     <div class="card-body">
                         <div class="avatar avatar-lg avatar-circle mb-4">
-                            <img class="avatar-img" src="assets/img/160x160/img10.jpg" alt="Amy Forren">
+                            <img class="avatar-img" src="assets/img/wrc/user.png" alt="Amy Forren">
                         </div>
 
                         <span class="card-subtitle">Product Designer</span>
@@ -339,7 +341,7 @@
                 <div class="card card-transition h-100">
                     <div class="card-body">
                         <div class="avatar avatar-lg avatar-circle mb-4">
-                            <img class="avatar-img" src="assets/img/160x160/img5.jpg" alt="Philip Williams">
+                            <img class="avatar-img" src="assets/img/wrc/user.png" alt="Philip Williams">
                         </div>
 
                         <span class="card-subtitle">Support Consultant</span>

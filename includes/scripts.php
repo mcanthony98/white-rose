@@ -96,5 +96,14 @@
                     swiper: sliderThumbs
                 }
             })
+
+            var swiper = new Swiper('.js-swiper-single-testimonials', {
+                pagination: {
+                    el: '.js-swiper-single-testimonials-pagination',
+                    clickable: true,
+                },
+            });
+
+
         })()
     </script>

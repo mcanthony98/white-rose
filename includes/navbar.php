@@ -1,40 +1,8 @@
 <!-- ========== HEADER ========== -->
-<header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide" data-hs-header-options='{
+<header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide bg-white" data-hs-header-options='{
         "fixMoment": 1000,
         "fixEffect": "slide"
       }'>
-    <!-- Topbar -->
-    <div class="container navbar-topbar">
-        <nav class="js-mega-menu navbar-nav-wrap">
-            <!-- Toggler -->
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#topbarNavDropdown" aria-controls="topbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="d-flex justify-content-between align-items-center small">
-                    <span class="navbar-toggler-text">Topbar</span>
-                    <span class="navbar-toggler-default">
-                        <i class="bi-chevron-down ms-2"></i>
-                    </span>
-                    <span class="navbar-toggler-toggled">
-                        <i class="bi-chevron-up ms-2"></i>
-                    </span>
-                </span>
-            </button>
-            <!-- End Toggler -->
-
-            <div id="topbarNavDropdown" class="navbar-nav-wrap-collapse collapse navbar-collapse navbar-topbar-collapse">
-                <div class="navbar-toggler-wrapper">
-                    <div class="navbar-topbar-toggler d-flex justify-content-between align-items-center">
-                        <span class="navbar-toggler-text small">Topbar</span>
-                        <!-- Toggler -->
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topbarNavDropdown" aria-controls="topbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="bi-x"></i>
-                        </button>
-                        <!-- End Toggler -->
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <!-- End Topbar -->
 
     <div class="container">
         <nav class="js-mega-menu navbar-nav-wrap">

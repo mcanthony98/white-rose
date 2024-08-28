@@ -113,7 +113,7 @@
                 <a class="card card-lg card-transition h-100 text-center" href="single-service.php?service=office-cleaning">
                     <div class="card-body">
                         <div class="mb-4">
-                            <i class="bi-building" style="font-size: 3rem; color: #0d6efd;"></i>
+                            <i class="bi-building" style="font-size: 3rem; color: #82c24a;"></i>
                         </div>
                         <h3 class="card-title">Commercial Cleaning</h3>
                         <p class="card-text text-body">Expert cleaning services for offices, retail spaces, and other commercial properties.</p>
@@ -130,7 +130,7 @@
                 <a class="card card-lg card-transition h-100 text-center" href="single-service.php?service=regular-cleaning">
                     <div class="card-body">
                         <div class="mb-4">
-                            <i class="bi-house" style="font-size: 3rem; color: #0d6efd;"></i>
+                            <i class="bi-house" style="font-size: 3rem; color: #82c24a;"></i>
                         </div>
                         <h3 class="card-title">Residential Cleaning</h3>
                         <p class="card-text text-body">Keep your home pristine with our regular and deep cleaning services.</p>
@@ -147,7 +147,7 @@
                 <a class="card card-lg card-transition h-100 text-center" href="single-service.php?service=carpet-cleaning">
                     <div class="card-body">
                         <div class="mb-4">
-                            <i class="bi-stars" style="font-size: 3rem; color: #0d6efd;"></i>
+                            <i class="bi-stars" style="font-size: 3rem; color: #82c24a;"></i>
                         </div>
                         <h3 class="card-title">Specialized Cleaning</h3>
                         <p class="card-text text-body">From carpet cleaning to window washing, we cover all your special cleaning needs.</p>

@@ -100,36 +100,6 @@
                         <!-- End Row -->
 
                         <hr class="my-5">
-
-                        <dl class="row">
-                            <dt class="col-sm-4">Share</dt>
-                            <dd class="col-sm-8">
-                                <!-- Socials -->
-                                <ul class="list-inline mb-0">
-                                    <li class="list-inline-item">
-                                        <a class="btn btn-soft-secondary btn-xs btn-icon" href="#">
-                                            <i class="bi-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a class="btn btn-soft-secondary btn-xs btn-icon" href="#">
-                                            <i class="bi-google"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a class="btn btn-soft-secondary btn-xs btn-icon" href="#">
-                                            <i class="bi-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a class="btn btn-soft-secondary btn-xs btn-icon" href="#">
-                                            <i class="bi-instagram"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <!-- End Socials -->
-                            </dd>
-                        </dl>
                         <!-- End Row -->
                     </div>
                     <!-- End Sticky Block -->

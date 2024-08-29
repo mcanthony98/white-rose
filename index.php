@@ -59,8 +59,7 @@
                             <p class="lead text-white">Experience unparalleled cleanliness and comfort in your home or business with White Rose Cleaners.</p>
                         </div>
                         <div class="d-grid d-sm-flex justify-content-center gap-3">
-                            <a class="btn btn-primary btn-transition px-6" href="contact.php">Get a Free Quote</a>
-                            <a class="btn btn-link text-white" href="about.php">Learn more <i class="bi-chevron-right small ms-1"></i></a>
+                            <a class="btn btn-primary btn-transition px-6" href="services.php">View Our Services</a>
                         </div>
                     </div>
                 </div>

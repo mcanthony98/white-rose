@@ -88,13 +88,13 @@
                 <!-- Socials -->
                 <ul class="list-inline list-separator mb-0">
                     <li class="list-inline-item">
-                        <a class="text-body" href="#">Privacy &amp; Policy</a>
+                        <a class="text-body" href="faqs.php">Privacy &amp; Policy</a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="text-body" href="#">Terms</a>
+                        <a class="text-body" href="faqs.php">Terms & Conditions</a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="text-body" href="#">Site Map</a>
+                        <a class="text-body" href="faqs.php">Help</a>
                     </li>
                 </ul>
                 <!-- End Socials -->

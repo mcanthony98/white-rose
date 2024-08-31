@@ -207,7 +207,7 @@
                 <div class="row justify-content-lg-center align-items-md-center">
                     <div class="col-md-5 mb-7 mb-md-0">
                         <!-- List Checked -->
-                        <ul class="list-checked list-checked-soft-bg-primary list-checked-lg mb-5">
+                        <ul class="list-checked list-checked-soft-bg-dark list-checked-lg mb-5">
                             <li class="list-checked-item">Highly trained and professional staff</li>
                             <li class="list-checked-item">Flexible scheduling to suit your routine</li>
                             <li class="list-checked-item">Use of eco-friendly and non-toxic products</li>
@@ -316,7 +316,6 @@
                             <span class="blockquote-footer-source">Business Owner, Birmingham</span>
                         </figcaption>
 
-                        <img class="avatar avatar-xl avatar-4x3" src="assets/svg/brands/capsule-primary.svg" alt="Company Logo">
                     </figure>
                     <!-- End Blockquote -->
                 </div>
@@ -337,7 +336,6 @@
                             <span class="blockquote-footer-source">Homeowner, Leeds</span>
                         </figcaption>
 
-                        <img class="avatar avatar-xl avatar-4x3" src="assets/svg/brands/google-primary.svg" alt="Company Logo">
                     </figure>
                     <!-- End Blockquote -->
                 </div>
@@ -477,7 +475,7 @@
 
     <!-- CTA -->
     <div class="container content-space-b-2">
-        <div class="text-center bg-img-start py-6" style="background: url(assets/svg/components/shape-6.svg) center no-repeat;">
+        <div class="text-center bg-img-start py-6" style="background: url() center no-repeat;">
             <div class="mb-5">
                 <h2>Get a Free Quote Today</h2>
                 <p>Let us help you maintain a clean, healthy, and welcoming space. Get in touch with us to discuss your cleaning needs.</p>

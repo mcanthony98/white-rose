@@ -9,33 +9,6 @@
     <!-- Head Content -->
     <?php include 'includes/head-content.php'; ?>
 
-    <style>
-        /* Hero Overlay */
-        .d-lg-flex.position-relative {
-            position: relative;
-            background-image: url('assets/img/wrc/hero.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 80vh;
-        }
-
-        .d-lg-flex.position-relative::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.4);
-            z-index: 1;
-        }
-
-        .container.d-lg-flex.align-items-lg-center.justify-content-center {
-            position: relative;
-            z-index: 2;
-        }
-    </style>
-
 </head>
 
 <body>

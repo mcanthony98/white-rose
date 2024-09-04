@@ -181,11 +181,13 @@
                     <div class="col-md-5 mb-7 mb-md-0">
                         <!-- List Checked -->
                         <ul class="list-checked list-checked-soft-bg-dark list-checked-lg mb-5">
-                            <li class="list-checked-item">Highly trained and professional staff</li>
-                            <li class="list-checked-item">Flexible scheduling to suit your routine</li>
-                            <li class="list-checked-item">Use of eco-friendly and non-toxic products</li>
-                            <li class="list-checked-item">Guaranteed satisfaction with every service</li>
-                            <li class="list-checked-item">Fully insured and reliable service</li>
+                            <li class="list-checked-item">Trained, DBS-checked staff for reliable, professional service</li>
+                            <li class="list-checked-item">GPS clock-in and quality audits ensure accountability</li>
+                            <li class="list-checked-item">Custom cleaning schedules with flexible timing</li>
+                            <li class="list-checked-item">Eco-friendly, non-toxic products for a safe environment</li>
+                            <li class="list-checked-item">Dedicated management team for smooth operations</li>
+                            <li class="list-checked-item">Fully insured services with guaranteed satisfaction</li>
+                            <li class="list-checked-item">Great value and transparent pricing</li>
                         </ul>
                         <!-- End List Checked -->
 

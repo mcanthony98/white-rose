@@ -42,10 +42,14 @@
                         <a id="residentialMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Residential</a>
                         <!-- Residential Services -->
                         <div class="hs-sub-menu dropdown-menu" aria-labelledby="residentialMenu" style="min-width: 14rem;">
-                            <a class="dropdown-item" href="single-service.php?service=regular-cleaning">Regular Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php?service=deep-cleaning">Deep Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php?service=move-in-move-out-cleaning">Move In/Move Out Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php?service=post-construction-cleaning">Post-Construction Cleaning</a>
+                            <a class="dropdown-item" href="single-service.php">Regular Cleaning</a>
+                            <a class="dropdown-item" href="single-service.php">Deep Cleaning</a>
+                            <a class="dropdown-item" href="single-service.php">Move In/Move Out Cleaning</a>
+                            <a class="dropdown-item" href="single-service.php">Holiday Lettings /Airbnb Cleaning</a>
+                            <a class="dropdown-item" href="single-service.php">Before / After Party Cleaning</a>
+                            <a class="dropdown-item" href="single-service.php">One-off Cleans</a>
+                            <a class="dropdown-item" href="single-service.php">Ironing & Laundry Services</a>
+
                         </div>
                         <!-- End Residential Services -->
                     </li>
@@ -56,10 +60,14 @@
                         <a id="commercialMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Commercial</a>
                         <!-- Commercial Services -->
                         <div class="hs-sub-menu dropdown-menu" aria-labelledby="commercialMenu" style="min-width: 14rem;">
-                            <a class="dropdown-item" href="single-service.php?service=office-cleaning">Office Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php?service=industrial-cleaning">Industrial Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php?service=retail-cleaning">Retail Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php?service=event-cleaning">Event Cleaning</a>
+                            <a class="dropdown-item" href="single-service.php">Office Cleaning</a>
+                            <a class="dropdown-item" href="single-service.php">School Cleaning</a>
+                            <a class="dropdown-item" href="single-service.php">Retail Cleaning</a>
+                            <a class="dropdown-item" href="single-service.php">Retails Shops and Outlets</a>
+                            <a class="dropdown-item" href="single-service.php">Post Construction Cleaning</a>
+                            <a class="dropdown-item" href="single-service.php">Warehouse and Factory Cleaning</a>
+                            <a class="dropdown-item" href="single-service.php">Internal Building & Sparkle Cleans</a>
+                            <a class="dropdown-item" href="single-service.php">Student & Serviced Accommodation Cleans</a>
                         </div>
                         <!-- End Commercial Services -->
                     </li>
@@ -70,10 +78,9 @@
                         <a id="specializedMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Specialized</a>
                         <!-- Specialized Services -->
                         <div class="hs-sub-menu dropdown-menu" aria-labelledby="specializedMenu" style="min-width: 14rem;">
-                            <a class="dropdown-item" href="single-service.php?service=carpet-cleaning">Carpet Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php?service=window-cleaning">Window Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php?service=upholstery-cleaning">Upholstery Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php?service=eco-friendly-cleaning">Eco-Friendly Cleaning</a>
+                            <a class="dropdown-item" href="single-service.php">Carpet Cleaning</a>
+                            <a class="dropdown-item" href="single-service.php">Window Cleaning</a>
+                            <a class="dropdown-item" href="single-service.php">COVID 19 Sanitization</a>
                         </div>
                         <!-- End Specialized Services -->
                     </li>

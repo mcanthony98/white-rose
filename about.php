@@ -278,6 +278,50 @@
     </div>
     <!-- End Icon Blocks -->
 
+    <!-- Clients -->
+    <div class="container content-space-2">
+
+        <!-- Heading -->
+        <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5">
+            <h2>Trusted by our clients</h2>
+        </div>
+        <!-- End Heading -->
+
+        <div class="row">
+            <div class="col text-center py-3">
+                <img class="avatar avatar-lg avatar-4x3" src="../assets/svg/brands/hollister-dark.svg" alt="Logo">
+            </div>
+            <!-- End Col -->
+
+            <div class="col text-center py-3">
+                <img class="avatar avatar-lg avatar-4x3" src="../assets/svg/brands/levis-dark.svg" alt="Logo">
+            </div>
+            <!-- End Col -->
+
+            <div class="col text-center py-3">
+                <img class="avatar avatar-lg avatar-4x3" src="../assets/svg/brands/new-balance-dark.svg" alt="Logo">
+            </div>
+            <!-- End Col -->
+
+            <div class="col text-center py-3">
+                <img class="avatar avatar-lg avatar-4x3" src="../assets/svg/brands/puma-dark.svg" alt="Logo">
+            </div>
+            <!-- End Col -->
+
+            <div class="col text-center py-3">
+                <img class="avatar avatar-lg avatar-4x3" src="../assets/svg/brands/nike-dark.svg" alt="Logo">
+            </div>
+            <!-- End Col -->
+
+            <div class="col text-center py-3">
+                <img class="avatar avatar-lg avatar-4x3" src="../assets/svg/brands/tnf-dark.svg" alt="Logo">
+            </div>
+            <!-- End Col -->
+        </div>
+        <!-- End Row -->
+    </div>
+    <!-- Clients -->
+
     <!-- Team -->
     <div class="container content-space-2 content-space-lg-3">
         <!-- Heading -->

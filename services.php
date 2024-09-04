@@ -112,8 +112,8 @@
                 <div class="card h-100">
                     <img class="card-img-top" src="assets/img/wrc/img-25.jpg" alt="Industrial Cleaning">
                     <div class="card-body">
-                        <h3 class="card-title mb-3">Industrial Cleaning</h3>
-                        <p class="card-text">Ensure safety and cleanliness in your industrial spaces with our expert cleaning services.</p>
+                        <h3 class="card-title mb-3">School Cleaning</h3>
+                        <p class="card-text">Ensure safety and cleanliness in your schooling spaces with our expert cleaning services.</p>
                     </div>
                     <div class="card-footer pt-0">
                         <a class="btn btn-outline-primary" href="single-service.php?service=industrial-cleaning">View Service</a>
@@ -219,7 +219,7 @@
                 <div class="card h-100">
                     <img class="card-img-top" src="assets/img/wrc/img-18.jpg" alt="Upholstery Cleaning">
                     <div class="card-body">
-                        <h3 class="card-title mb-3">Upholstery Cleaning</h3>
+                        <h3 class="card-title mb-3">COVID 19 Sanitization</h3>
                         <p class="card-text">Revitalize your furniture with our thorough upholstery cleaning services.</p>
                     </div>
                     <div class="card-footer pt-0">

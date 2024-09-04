@@ -52,7 +52,7 @@
 
                         <div class="col-sm-6">
                             <h5 class="mb-1">Email us:</h5>
-                            <p>whiteroseservicegroup@gmail.com</p>
+                            <p>info@whiterosecleaners.co.uk</p>
                         </div>
                         <!-- End Col -->
 

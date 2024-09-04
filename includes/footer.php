@@ -16,7 +16,7 @@
                 <ul class="list-unstyled list-py-1">
                     <li><a class="link-sm link-secondary" href="#"><i class="bi-geo-alt-fill me-1"></i> 1234 Cleaning Ave, CleanCity</a></li>
                     <li><a class="link-sm link-secondary" href="tel:+1234567890"><i class="bi-telephone-inbound-fill me-1"></i> +1 (234) 567-890</a></li>
-                    <li><a class="link-sm link-secondary" href="mailto:info@whiterosecleaners.com"><i class="bi-envelope-fill me-1"></i> info@whiterosecleaners.com</a></li>
+                    <li><a class="link-sm link-secondary" href="mailto:info@whiterosecleaners.co.uk"><i class="bi-envelope-fill me-1"></i> info@whiterosecleaners.co.uk</a></li>
                 </ul>
                 <!-- End Contact Info -->
             </div>
@@ -42,10 +42,11 @@
                 <h5 class="mb-3">Commercial Cleaning</h5>
                 <!-- List -->
                 <ul class="list-unstyled list-py-1 mb-0">
-                    <li><a class="link-sm link-secondary" href="single-service.php?service=office-cleaning">Office Cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php?service=industrial-cleaning">Industrial Cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php?service=retail-cleaning">Retail Cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php?service=event-cleaning">Event Cleaning</a></li>
+                    <li><a class="link-sm link-secondary" href="single-service.php">Office Cleaning</a></li>
+                    <li><a class="link-sm link-secondary" href="single-service.php">School cleaning</a></li>
+                    <li><a class="link-sm link-secondary" href="single-service.php">Retail Cleaning</a></li>
+                    <li><a class="link-sm link-secondary" href="single-service.php">Retails Shops and Outlets</a></li>
+                    <li><a class="link-sm link-secondary" href="single-service.php">Post Construction Cleaning</a></li>
                 </ul>
                 <!-- End List -->
             </div>
@@ -56,10 +57,10 @@
                 <h5 class="mb-3">Residential Cleaning</h5>
                 <!-- List -->
                 <ul class="list-unstyled list-py-1 mb-0">
-                    <li><a class="link-sm link-secondary" href="single-service.php?service=regular-cleaning">Regular Cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php?service=deep-cleaning">Deep Cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php?service=move-in-move-out-cleaning">Move In/Move Out Cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php?service=post-construction-cleaning">Post-Construction Cleaning</a></li>
+                    <li><a class="link-sm link-secondary" href="single-service.php">Regular Cleaning</a></li>
+                    <li><a class="link-sm link-secondary" href="single-service.php">Deep Cleaning</a></li>
+                    <li><a class="link-sm link-secondary" href="single-service.php">Move In/Move Out Cleaning</a></li>
+                    <li><a class="link-sm link-secondary" href="single-service.php">Holiday Lettings /Airbnb Cleaning</a></li>
                 </ul>
                 <!-- End List -->
             </div>
@@ -70,10 +71,9 @@
                 <h5 class="mb-3">Specialized Cleaning</h5>
                 <!-- List -->
                 <ul class="list-unstyled list-py-1 mb-5">
-                    <li><a class="link-sm link-secondary" href="single-service.php?service=carpet-cleaning">Carpet Cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php?service=window-cleaning">Window Cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php?service=upholstery-cleaning">Upholstery Cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php?service=eco-friendly-cleaning">Eco-Friendly Cleaning</a></li>
+                    <li><a class="link-sm link-secondary" href="single-service.php">Carpet Cleaning</a></li>
+                    <li><a class="link-sm link-secondary" href="single-service.php">Window Cleaning</a></li>
+                    <li><a class="link-sm link-secondary" href="single-service.php">COVID 19 Sanitization</a></li>
                 </ul>
                 <!-- End List -->
             </div>

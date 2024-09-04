@@ -99,6 +99,12 @@
                     </li>
                     <!-- End Contact -->
 
+                    <!-- Careers -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.php">Careers</a>
+                    </li>
+                    <!-- End Careers -->
+
                 </ul>
             </nav>
 

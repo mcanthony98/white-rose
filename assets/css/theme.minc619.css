@@ -24717,7 +24717,8 @@ a:hover .text-inherit {
   }
 }
 
-/* Hero Overlay & Navabr Responsiveness */
+
+/* Hero Overlay & Navbar Responsiveness */
 .d-lg-flex.position-relative {
   position: relative;
   background-image: url("assets/img/wrc/hero.jpg");
@@ -24864,7 +24865,9 @@ a:hover .text-inherit {
   flex-wrap: nowrap;
   justify-content: space-between; 
   align-items: center; 
-  overflow: hidden; 
+  position: relative;
+  z-index: 1040; 
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .navbar-collapse {
@@ -24882,3 +24885,19 @@ a:hover .text-inherit {
   margin-left: auto; 
   overflow: hidden;
 }
+
+.dropdown-menu {
+  z-index: 1050;
+  position: absolute;
+}
+
+.hs-has-sub-menu:hover .hs-sub-menu {
+  display: block;
+}
+
+.hs-sub-menu {
+  display: none;
+  position: absolute;
+  z-index: 1050;
+}
+

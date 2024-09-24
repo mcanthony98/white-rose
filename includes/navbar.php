@@ -110,7 +110,7 @@
 
             <!-- CTA Button -->
             <div class="navbar-cta">
-                <a class="btn btn-primary btn-transition" href="contact.php">Get a Free Quote Today</a>
+                <a class="btn btn-primary btn-transition" href="contact.php">Get a Free Quote</a>
             </div>
             <!-- End CTA Button -->
 

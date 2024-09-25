@@ -1,3 +1,7 @@
+<?php
+ 
+ $navcatres = $conn->query("SELECT * FROM category WHERE cat_status=1");
+ ?>
 <!-- ========== HEADER ========== -->
 <header id="header" class="navbar navbar-expand-lg navbar-end navbar-absolute-top navbar-light navbar-show-hide bg-white" data-hs-header-options='{
         "fixMoment": 1000,
@@ -41,7 +45,7 @@
                     <li class="hs-has-sub-menu nav-item">
                         <a id="residentialMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Residential</a>
                         <!-- Residential Services -->
-                        <div class="hs-sub-menu dropdown-menu" aria-labelledby="residentialMenu" style="min-width: 14rem;">
+                        <div class="hs-sub-menu dropdown-menu" aria-labelledby="residentialMenu" style="min-width: 14rem;z-index:1050;">
                             <a class="dropdown-item" href="single-service.php">Regular Cleaning</a>
                             <a class="dropdown-item" href="single-service.php">Deep Cleaning</a>
                             <a class="dropdown-item" href="single-service.php">Move In/Move Out Cleaning</a>

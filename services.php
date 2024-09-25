@@ -1,3 +1,10 @@
+<?php
+require "includes/connect.php";
+
+
+$servres = $conn->query("SELECT * FROM service s JOIN category c ON s.category_id=c.category_id WHERE s.status=1 AND c.cat_status=1");
+$catres = $conn->query("SELECT * FROM category WHERE cat_status=1");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,15 +82,13 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="javascript:;" data-group="all">All Services</a>
                 </li>
+                <?php
+                while($catrow = $catres->fetch_assoc()){
+                ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="javascript:;" data-group="commercial">Commercial</a>
+                    <a class="nav-link" href="javascript:;" data-group="<?php echo $catrow['category_name'];?>"><?php echo $catrow['category_name'];?></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:;" data-group="residential">Residential</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript:;" data-group="specialized">Specialized</a>
-                </li>
+                <?php } ?>
             </ul>
             <!-- End Nav -->
         </div>
@@ -91,144 +96,26 @@
 
         <!-- Service Cards -->
         <div class="js-shuffle row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+        <?php
+             while($servrow = $servres->fetch_assoc()){
+            ?>
             <!-- Commercial Cleaning -->
-            <div class="js-shuffle-item col mb-5" data-groups='["commercial"]'>
+            <div class="js-shuffle-item col mb-5" data-groups='["<?php echo $servrow['category_name'];?>"]'>
                 <!-- Card -->
                 <div class="card h-100">
-                    <img class="card-img-top" src="assets/img/wrc/img-3.jpg" alt="Commercial Cleaning">
+                    <img class="card-img-top" src="uploads/<?php echo $servrow['image'];?>" alt="<?php echo $servrow['name'];?>">
                     <div class="card-body">
-                        <h3 class="card-title mb-3">Office Cleaning</h3>
-                        <p class="card-text">Maintain a pristine and productive workspace with our tailored office cleaning solutions.</p>
+                        <h3 class="card-title mb-3"><?php echo $servrow['name'];?></h3>
+                        <p class="card-text"><?php echo $servrow['short_desc'];?></p>
                     </div>
                     <div class="card-footer pt-0">
-                        <a class="btn btn-outline-primary" href="single-service.php?service=office-cleaning">View Service</a>
+                        <a class="btn btn-outline-primary" href="service.php?id=<?php echo $servrow['service_id'];?>&<?php echo $servrow['slag'];?>">View Service</a>
                     </div>
                 </div>
                 <!-- End Card -->
             </div>
+            <?php } ?>
 
-            <div class="js-shuffle-item col mb-5" data-groups='["commercial"]'>
-                <!-- Card -->
-                <div class="card h-100">
-                    <img class="card-img-top" src="assets/img/wrc/img-25.jpg" alt="Industrial Cleaning">
-                    <div class="card-body">
-                        <h3 class="card-title mb-3">School Cleaning</h3>
-                        <p class="card-text">Ensure safety and cleanliness in your schooling spaces with our expert cleaning services.</p>
-                    </div>
-                    <div class="card-footer pt-0">
-                        <a class="btn btn-outline-primary" href="single-service.php?service=industrial-cleaning">View Service</a>
-                    </div>
-                </div>
-                <!-- End Card -->
-            </div>
-
-            <div class="js-shuffle-item col mb-5" data-groups='["commercial"]'>
-                <!-- Card -->
-                <div class="card h-100">
-                    <img class="card-img-top" src="assets/img/wrc/img-9.jpg" alt="Retail Cleaning">
-                    <div class="card-body">
-                        <h3 class="card-title mb-3">Retail Cleaning</h3>
-                        <p class="card-text">Create a welcoming shopping experience with our detailed retail cleaning services.</p>
-                    </div>
-                    <div class="card-footer pt-0">
-                        <a class="btn btn-outline-primary" href="single-service.php?service=retail-cleaning">View Service</a>
-                    </div>
-                </div>
-                <!-- End Card -->
-            </div>
-
-            <!-- Residential Cleaning -->
-            <div class="js-shuffle-item col mb-5" data-groups='["residential"]'>
-                <!-- Card -->
-                <div class="card h-100">
-                    <img class="card-img-top" src="assets/img/wrc/img-11.jpg" alt="Regular Cleaning">
-                    <div class="card-body">
-                        <h3 class="card-title mb-3">Regular Cleaning</h3>
-                        <p class="card-text">Keep your home clean and fresh with our routine residential cleaning services.</p>
-                    </div>
-                    <div class="card-footer pt-0">
-                        <a class="btn btn-outline-primary" href="single-service.php?service=regular-cleaning">View Service</a>
-                    </div>
-                </div>
-                <!-- End Card -->
-            </div>
-
-            <div class="js-shuffle-item col mb-5" data-groups='["residential"]'>
-                <!-- Card -->
-                <div class="card h-100">
-                    <img class="card-img-top" src="assets/img/wrc/img-14.jpg" alt="Deep Cleaning">
-                    <div class="card-body">
-                        <h3 class="card-title mb-3">Deep Cleaning</h3>
-                        <p class="card-text">Achieve a thorough clean in every corner of your home with our deep cleaning service.</p>
-                    </div>
-                    <div class="card-footer pt-0">
-                        <a class="btn btn-outline-primary" href="single-service.php?service=deep-cleaning">View Service</a>
-                    </div>
-                </div>
-                <!-- End Card -->
-            </div>
-
-            <div class="js-shuffle-item col mb-5" data-groups='["residential"]'>
-                <!-- Card -->
-                <div class="card h-100">
-                    <img class="card-img-top" src="assets/img/wrc/img-15.jpg" alt="Move In/Move Out Cleaning">
-                    <div class="card-body">
-                        <h3 class="card-title mb-3">Move In/Move Out Cleaning</h3>
-                        <p class="card-text">Make your move stress-free with our comprehensive move-in/move-out cleaning.</p>
-                    </div>
-                    <div class="card-footer pt-0">
-                        <a class="btn btn-outline-primary" href="single-service.php?service=move-in-move-out-cleaning">View Service</a>
-                    </div>
-                </div>
-                <!-- End Card -->
-            </div>
-
-            <!-- Specialized Cleaning -->
-            <div class="js-shuffle-item col mb-5" data-groups='["specialized"]'>
-                <!-- Card -->
-                <div class="card h-100">
-                    <img class="card-img-top" src="assets/img/wrc/img-16.jpg" alt="Carpet Cleaning">
-                    <div class="card-body">
-                        <h3 class="card-title mb-3">Carpet Cleaning</h3>
-                        <p class="card-text">Keep your carpets looking fresh and new with our specialized carpet cleaning services.</p>
-                    </div>
-                    <div class="card-footer pt-0">
-                        <a class="btn btn-outline-primary" href="single-service.php?service=carpet-cleaning">View Service</a>
-                    </div>
-                </div>
-                <!-- End Card -->
-            </div>
-
-            <div class="js-shuffle-item col mb-5" data-groups='["specialized"]'>
-                <!-- Card -->
-                <div class="card h-100">
-                    <img class="card-img-top" src="assets/img/wrc/img-20.jpg" alt="Window Cleaning">
-                    <div class="card-body">
-                        <h3 class="card-title mb-3">Window Cleaning</h3>
-                        <p class="card-text">Get crystal clear windows with our professional window cleaning services.</p>
-                    </div>
-                    <div class="card-footer pt-0">
-                        <a class="btn btn-outline-primary" href="single-service.php?service=window-cleaning">View Service</a>
-                    </div>
-                </div>
-                <!-- End Card -->
-            </div>
-
-            <div class="js-shuffle-item col mb-5" data-groups='["specialized"]'>
-                <!-- Card -->
-                <div class="card h-100">
-                    <img class="card-img-top" src="assets/img/wrc/img-18.jpg" alt="Upholstery Cleaning">
-                    <div class="card-body">
-                        <h3 class="card-title mb-3">COVID 19 Sanitization</h3>
-                        <p class="card-text">Revitalize your furniture with our thorough upholstery cleaning services.</p>
-                    </div>
-                    <div class="card-footer pt-0">
-                        <a class="btn btn-outline-primary" href="single-service.php?service=upholstery-cleaning">View Service</a>
-                    </div>
-                </div>
-                <!-- End Card -->
-            </div>
-            <!-- End of Specialized Cleaning Services -->
         </div>
         <!-- End Service Cards -->
 

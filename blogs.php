@@ -1,9 +1,16 @@
+<?php
+require "includes/connect.php";
+
+
+$res = $conn->query("SELECT * FROM blog WHERE blog_status=1");
+$cres = $conn->query("SELECT * FROM blog WHERE blog_status=1 GROUP BY blog_category");
+?>
 <!DOCTYPE html>
 <html lang="en" dir="">
 
 <head>
     <!-- Title -->
-    <title>Blog | White Rose Cleaners</title>
+    <title>Our Blog | White Rose Cleaners</title>
 
     <!-- Head Content -->
     <?php include 'includes/head-content.php'; ?>
@@ -43,11 +50,12 @@
             <!-- End Row -->
 
             <div class="row mb-7">
+            <?php while($row = $res->fetch_assoc()){?>
                 <div class="col-sm-6 col-lg-4 mb-4">
                     <!-- Card -->
                     <div class="card h-100">
                         <div class="shape-container">
-                            <img class="card-img-top" src="assets/img/wrc/img-11.jpg" alt="Office Cleaning Tips">
+                            <img class="card-img-top" src="uploads/<?php echo $row['blog_image'];?>" alt="<?php echo $row['blog_title'];?>">
 
                             <!-- Shape -->
                             <div class="shape shape-bottom zi-1" style="margin-bottom: -.25rem">
@@ -61,15 +69,15 @@
                         <!-- Card Body -->
                         <div class="card-body">
                             <h3 class="card-title">
-                                <a class="text-dark" href="single-blog.php">The Ultimate Office Cleaning Checklist</a>
+                                <a class="text-dark" href="article.php?id=<?php echo $row['blog_id'];?>&<?php echo $row['blog_slag'];?>"><?php echo $row['blog_title'];?></a>
                             </h3>
 
-                            <p class="card-text">Keep your workspace pristine with our comprehensive office cleaning tips.</p>
+                            <p class="card-text"><?php echo $row['blog_description'];?></p>
                         </div>
                         <!-- End Card Body -->
 
                         <!-- Card Footer -->
-                        <div class="card-footer">
+                        <div class="card-footer d-none">
                             <div class="d-flex align-items-center">
                                 <img class="avatar avatar-xs avatar-circle" src="assets/img/wrc/user.png" alt="Author Image">
                                 <div class="flex-grow-1">
@@ -84,90 +92,8 @@
                     <!-- End Card -->
                 </div>
                 <!-- End Col -->
+                 <?php } ?>
 
-                <div class="col-sm-6 col-lg-4 mb-4">
-                    <!-- Card -->
-                    <div class="card h-100">
-                        <div class="shape-container">
-                            <img class="card-img-top" src="assets/img/wrc/img-15.jpg" alt="Eco-Friendly Cleaning">
-
-                            <!-- Shape -->
-                            <div class="shape shape-bottom zi-1" style="margin-bottom: -.25rem">
-                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
-                                    <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
-                                </svg>
-                            </div>
-                            <!-- End Shape -->
-                        </div>
-
-                        <!-- Card Body -->
-                        <div class="card-body">
-                            <h3 class="card-title">
-                                <a class="text-dark" href="single-blog.php">Eco-Friendly Cleaning Solutions for a Greener Home</a>
-                            </h3>
-
-                            <p class="card-text">Discover sustainable cleaning products that keep your home spotless and safe for the environment.</p>
-                        </div>
-                        <!-- End Card Body -->
-
-                        <!-- Card Footer -->
-                        <div class="card-footer">
-                            <div class="d-flex align-items-center">
-                                <img class="avatar avatar-xs avatar-circle" src="assets/img/wrc/user.png" alt="Author Image">
-                                <div class="flex-grow-1">
-                                    <div class="d-flex justify-content-end">
-                                        <p class="card-text">August 22</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Card Footer -->
-                    </div>
-                    <!-- End Card -->
-                </div>
-                <!-- End Col -->
-
-                <div class="col-sm-6 col-lg-4 mb-4">
-                    <!-- Card -->
-                    <div class="card h-100">
-                        <div class="shape-container">
-                            <img class="card-img-top" src="assets/img/wrc/img-3.jpg" alt="Deep Cleaning">
-
-                            <!-- Shape -->
-                            <div class="shape shape-bottom zi-1" style="margin-bottom: -.25rem">
-                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
-                                    <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
-                                </svg>
-                            </div>
-                            <!-- End Shape -->
-                        </div>
-
-                        <!-- Card Body -->
-                        <div class="card-body">
-                            <h3 class="card-title">
-                                <a class="text-dark" href="single-blog.php">The Power of Deep Cleaning: What You Need to Know</a>
-                            </h3>
-
-                            <p class="card-text">Uncover the benefits of deep cleaning and how it can transform your living space.</p>
-                        </div>
-                        <!-- End Card Body -->
-
-                        <!-- Card Footer -->
-                        <div class="card-footer">
-                            <div class="d-flex align-items-center">
-                                <img class="avatar avatar-xs avatar-circle" src="assets/img/wrc/user.png" alt="Author Image">
-                                <div class="flex-grow-1">
-                                    <div class="d-flex justify-content-end">
-                                        <p class="card-text">August 18</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Card Footer -->
-                    </div>
-                    <!-- End Card -->
-                </div>
-                <!-- End Col -->
                 <!-- Additional Cards Go Here -->
             </div>
             <!-- End Row -->

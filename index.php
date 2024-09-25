@@ -1,3 +1,9 @@
+<?php
+require "includes/connect.php";
+
+
+$catres = $conn->query("SELECT * FROM category WHERE cat_status=1");
+?>
 <!DOCTYPE html>
 <html lang="en" dir="">
 

@@ -7,7 +7,7 @@
         "fixMoment": 1000,
         "fixEffect": "slide"
       }'>
-    <div class="container d-flex align-items-center">
+    <div class="container d-flex align-items-end">
         <!-- Default Logo -->
         <a class="navbar-brand" href="index.php" aria-label="White Rose Cleaners">
             <img class="navbar-brand-logo p-0 m-0" src="assets/img/wrc/logo-no-bg.png" style="height: 60px;" alt="Logo">
@@ -41,54 +41,28 @@
                     </li>
                     <!-- End About -->
 
+                    <?php while($navspecrow = $navcatres->fetch_assoc()){?>
                     <!-- Residential -->
                     <li class="hs-has-sub-menu nav-item">
-                        <a id="residentialMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Residential</a>
+                        <a id="<?php echo $navspecrow['category_slag'];?>" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" aria-expanded="false"><?php echo $navspecrow['category_name'];?></a>
                         <!-- Residential Services -->
-                        <div class="hs-sub-menu dropdown-menu" aria-labelledby="residentialMenu" style="min-width: 14rem;z-index:1050;">
-                            <a class="dropdown-item" href="single-service.php">Regular Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php">Deep Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php">Move In/Move Out Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php">Holiday Lettings /Airbnb Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php">Before / After Party Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php">One-off Cleans</a>
-                            <a class="dropdown-item" href="single-service.php">Ironing & Laundry Services</a>
+                        <div class="hs-sub-menu dropdown-menu" aria-labelledby="<?php echo $navspecrow['category_slag'];?>" style="min-width: 14rem;z-index:1050;">
+                        <?php 
+                                $navspecrowid = $navspecrow['category_id'];
+                                $navservres = $conn->query("SELECT * FROM service WHERE category_id=$navspecrowid");
+                                while($navservrow = $navservres->fetch_assoc()){
+                                ?>
+                            <a class="dropdown-item" href="service.php?id=<?php echo $navservrow['service_id'];?>&<?php echo $navservrow['slag'];?>"><?php echo $navservrow['name'];?></a>
+                            <?php }?>
 
                         </div>
                         <!-- End Residential Services -->
                     </li>
                     <!-- End Residential -->
+                     
+                    <?php } ?>
 
-                    <!-- Commercial -->
-                    <li class="hs-has-sub-menu nav-item">
-                        <a id="commercialMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Commercial</a>
-                        <!-- Commercial Services -->
-                        <div class="hs-sub-menu dropdown-menu" aria-labelledby="commercialMenu" style="min-width: 14rem;">
-                            <a class="dropdown-item" href="single-service.php">Office Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php">School Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php">Retail Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php">Retails Shops and Outlets</a>
-                            <a class="dropdown-item" href="single-service.php">Post Construction Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php">Warehouse and Factory Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php">Internal Building & Sparkle Cleans</a>
-                            <a class="dropdown-item" href="single-service.php">Student & Serviced Accommodation Cleans</a>
-                        </div>
-                        <!-- End Commercial Services -->
-                    </li>
-                    <!-- End Commercial -->
-
-                    <!-- Specialized -->
-                    <li class="hs-has-sub-menu nav-item">
-                        <a id="specializedMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Specialized</a>
-                        <!-- Specialized Services -->
-                        <div class="hs-sub-menu dropdown-menu" aria-labelledby="specializedMenu" style="min-width: 14rem;">
-                            <a class="dropdown-item" href="single-service.php">Carpet Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php">Window Cleaning</a>
-                            <a class="dropdown-item" href="single-service.php">COVID 19 Sanitization</a>
-                        </div>
-                        <!-- End Specialized Services -->
-                    </li>
-                    <!-- End Specialized -->
+                   
 
 
                     <!-- Blog -->
@@ -104,7 +78,7 @@
                     <!-- End Contact -->
 
                     <!-- Careers -->
-                    <li class="nav-item">
+                    <li class="nav-item d-none">
                         <a class="nav-link" href="careers.php">Careers</a>
                     </li>
                     <!-- End Careers -->

@@ -46,7 +46,7 @@
                     <li class="hs-has-sub-menu nav-item">
                         <a id="<?php echo $navspecrow['category_slag'];?>" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" aria-expanded="false"><?php echo $navspecrow['category_name'];?></a>
                         <!-- Residential Services -->
-                        <div class="hs-sub-menu dropdown-menu" aria-labelledby="<?php echo $navspecrow['category_slag'];?>" style="min-width: 14rem;z-index:1050;">
+                        <div class="hs-sub-menu dropdown-menu" aria-labelledby="<?php echo $navspecrow['category_slag'];?>" style="min-width: 14rem;">
                         <?php 
                                 $navspecrowid = $navspecrow['category_id'];
                                 $navservres = $conn->query("SELECT * FROM service WHERE category_id=$navspecrowid");

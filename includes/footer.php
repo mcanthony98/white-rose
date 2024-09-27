@@ -1,3 +1,7 @@
+<?php
+ 
+ $navcatres = $conn->query("SELECT * FROM category WHERE cat_status=1");
+ ?>
 <!-- ========== FOOTER ========== -->
 <footer class="bg-light">
     <div class="container pb-1 pb-lg-7">
@@ -38,46 +42,25 @@
             <!-- End Useful Links -->
 
             <!-- Commercial Cleaning -->
+            <?php while($navspecrow = $navcatres->fetch_assoc()){?>
             <div class="col-sm mb-7 mb-sm-0">
-                <h5 class="mb-3">Commercial Cleaning</h5>
+                <h5 class="mb-3"><?php echo $navspecrow['category_name'];?> Cleaning</h5>
                 <!-- List -->
                 <ul class="list-unstyled list-py-1 mb-0">
-                    <li><a class="link-sm link-secondary" href="single-service.php">Office Cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php">School cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php">Retail Cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php">Retails Shops and Outlets</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php">Post Construction Cleaning</a></li>
+                <?php 
+                $navspecrowid = $navspecrow['category_id'];
+                $navservres = $conn->query("SELECT * FROM service WHERE category_id=$navspecrowid");
+                while($navservrow = $navservres->fetch_assoc()){
+                ?>
+                    <li><a class="link-sm link-secondary" href="service.php?id=<?php echo $navservrow['service_id'];?>&<?php echo $navservrow['slag'];?>"><?php echo $navservrow['name'];?></a></li>
+                    <?php } ?>
                 </ul>
                 <!-- End List -->
             </div>
             <!-- End Commercial Cleaning -->
+             <?php }?>
 
-            <!-- Residential Cleaning -->
-            <div class="col-sm mb-7 mb-sm-0">
-                <h5 class="mb-3">Residential Cleaning</h5>
-                <!-- List -->
-                <ul class="list-unstyled list-py-1 mb-0">
-                    <li><a class="link-sm link-secondary" href="single-service.php">Regular Cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php">Deep Cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php">Move In/Move Out Cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php">Holiday Lettings /Airbnb Cleaning</a></li>
-                </ul>
-                <!-- End List -->
-            </div>
-            <!-- End Residential Cleaning -->
-
-            <!-- Specialized Cleaning -->
-            <div class="col-sm">
-                <h5 class="mb-3">Specialized Cleaning</h5>
-                <!-- List -->
-                <ul class="list-unstyled list-py-1 mb-5">
-                    <li><a class="link-sm link-secondary" href="single-service.php">Carpet Cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php">Window Cleaning</a></li>
-                    <li><a class="link-sm link-secondary" href="single-service.php">COVID 19 Sanitization</a></li>
-                </ul>
-                <!-- End List -->
-            </div>
-            <!-- End Specialized Cleaning -->
+            
         </div>
         <!-- End Row -->
 

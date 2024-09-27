@@ -7,7 +7,7 @@
         "fixMoment": 1000,
         "fixEffect": "slide"
       }'>
-    <div class="container d-flex align-items-end">
+    <div class="container d-flex align-items-start">
         <!-- Default Logo -->
         <a class="navbar-brand" href="index.php" aria-label="White Rose Cleaners">
             <img class="navbar-brand-logo p-0 m-0" src="assets/img/wrc/logo-no-bg.png" style="height: 60px;" alt="Logo">

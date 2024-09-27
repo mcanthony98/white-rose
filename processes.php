@@ -5,7 +5,7 @@ include "includes/mailer.php";
 date_default_timezone_set("Africa/Nairobi");
 $date = date("Y-m-d H:i:s");
 $filedate = date("H_i_s");
-$self_email = "whiteroseservicegroup@gmail.com";
+$self_email = "info@whiterosecleaners.co.uk";
 
 
 if(isset($_POST['sendsms'])){

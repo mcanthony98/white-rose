@@ -31,7 +31,7 @@
                 <h5 class="mb-3">Useful Links</h5>
                 <!-- List -->
                 <ul class="list-unstyled list-py-1">
-                    <li><a class="link-sm link-secondary" href="home.php">Home</a></li>
+                    <li><a class="link-sm link-secondary" href="index.php">Home</a></li>
                     <li><a class="link-sm link-secondary" href="about.php">About Us</a></li>
                     <li><a class="link-sm link-secondary" href="blogs.php">Blog</a></li>
                     <li><a class="link-sm link-secondary" href="faqs.php">FAQs</a></li>
@@ -49,7 +49,7 @@
                 <ul class="list-unstyled list-py-1 mb-0">
                 <?php 
                 $navspecrowid = $navspecrow['category_id'];
-                $navservres = $conn->query("SELECT * FROM service WHERE category_id=$navspecrowid");
+                $navservres = $conn->query("SELECT * FROM service WHERE category_id=$navspecrowid AND status=1");
                 while($navservrow = $navservres->fetch_assoc()){
                 ?>
                     <li><a class="link-sm link-secondary" href="service.php?id=<?php echo $navservrow['service_id'];?>&<?php echo $navservrow['slag'];?>"><?php echo $navservrow['name'];?></a></li>

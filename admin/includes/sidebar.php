@@ -73,7 +73,7 @@
             <a href="insights.php" class="nav-link">
               <i class="nav-icon fas fa-edit"></i>
               <p>
-                News & Insights
+                Blogs & Insights
               </p>
             </a>
           </li>

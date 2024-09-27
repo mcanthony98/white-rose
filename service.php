@@ -28,35 +28,11 @@ $row = $profres->fetch_assoc();
             <div class="row">
                 <div class="col-lg-7 mb-7 mb-lg-0">
                     <div class="row">
-                        <div class="col-6 mb-4">
-                            <img class="img-fluid rounded-2" src="assets/img/wrc/img-11.jpg" alt="Professional Cleaning Service">
+                        <div class="col-12 mb-4">
+                            <img class="img-fluid rounded-2 w-100" src="uploads/<?php echo $row['image'];?>" alt="<?php echo $row['slag'];?>">
                         </div>
                         <!-- End Col -->
 
-                        <div class="col-6 mb-4">
-                            <img class="img-fluid rounded-2" src="assets/img/wrc/img-20.jpg" alt="Professional Cleaning Service">
-                        </div>
-                        <!-- End Col -->
-
-                        <div class="col-6 mb-4">
-                            <img class="img-fluid rounded-2" src="assets/img/wrc/img-3.jpg" alt="Professional Cleaning Service">
-                        </div>
-                        <!-- End Col -->
-
-                        <div class="col-6 mb-4">
-                            <img class="img-fluid rounded-2" src="assets/img/wrc/img-14.jpg" alt="Professional Cleaning Service">
-                        </div>
-                        <!-- End Col -->
-
-                        <div class="col-6 mb-4">
-                            <img class="img-fluid rounded-2" src="assets/img/wrc/img-15.jpg" alt="Professional Cleaning Service">
-                        </div>
-                        <!-- End Col -->
-
-                        <div class="col-6 mb-4">
-                            <img class="img-fluid rounded-2" src="assets/img/wrc/img-16.jpg" alt="Professional Cleaning Service">
-                        </div>
-                        <!-- End Col -->
 
                     </div>
                     <!-- End Row -->
@@ -80,7 +56,7 @@ $row = $profres->fetch_assoc();
 
                         <dl class="row">
                             <dt class="col-sm-4">Service Area</dt>
-                            <dd class="col-sm-8">Available across London and surrounding areas</dd>
+                            <dd class="col-sm-8">Available across various areas across the UK</dd>
                         </dl>
                         <!-- End Row -->
 
@@ -112,8 +88,8 @@ $row = $profres->fetch_assoc();
             <div class="container content-space-2 content-space-lg-3">
                 <!-- Heading -->
                 <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-                    <span class="text-cap">Comprehensive Office Cleaning</span>
-                    <h2>Why Our Office Cleaning Stands Out</h2>
+                    <span class="text-cap">Comprehensive <?php echo $row['name'] ;?></span>
+                    <h2>Why Our <?php echo $row['name'] ;?> Stands Out</h2>
                 </div>
                 <!-- End Heading -->
 
@@ -122,7 +98,7 @@ $row = $profres->fetch_assoc();
                         <div class="col-md-5 mb-7 mb-md-0">
                             <!-- List Checked -->
                             <ul class="list-checked list-checked-soft-bg-dark list-checked-lg mb-5">
-                                <li class="list-checked-item">DBS-checked, trained staff to ensure your office is cleaned with professionalism and care</li>
+                                <li class="list-checked-item">DBS-checked, trained staff to ensure your space is cleaned with professionalism and care</li>
                                 <li class="list-checked-item">Thorough dusting and disinfecting of all surfaces, desks, and workstations</li>
                                 <li class="list-checked-item">Waste collection and disposal, ensuring a clutter-free workspace</li>
                                 <li class="list-checked-item">Eco-friendly, non-toxic products to keep your office safe for employees and visitors</li>
@@ -143,8 +119,8 @@ $row = $profres->fetch_assoc();
                                             <i class="bi-shield-check fa-2x"></i>
                                         </span>
 
-                                        <h3 class="card-title">Tailored Office Cleaning for a Productive Workplace</h3>
-                                        <p class="card-text">Our office cleaning service covers everything from daily maintenance to deep cleaning. We dust, disinfect, vacuum, and sanitize all areas, including workstations, communal spaces, and high-touch surfaces to ensure a healthy, welcoming environment. We customize our approach based on your specific needs, ensuring your office remains spotless, organized, and ready for success.</p>
+                                        <h3 class="card-title">Tailored Services for your spaces </h3>
+                                        <p class="card-text">Our <?php echo $row['name'] ;?> service covers everything from daily maintenance to deep cleaning. We dust, disinfect, vacuum, and sanitize all areas, including workstations, communal spaces, and high-touch surfaces to ensure a healthy, welcoming environment. We customize our approach based on your specific needs, ensuring your space remains spotless, organized, and ready for success.</p>
                                     </div>
                                 </div>
                                 <!-- End Card -->

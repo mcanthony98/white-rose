@@ -7,7 +7,7 @@
         "fixMoment": 1000,
         "fixEffect": "slide"
       }'>
-    <div class="container d-flex align-items-start">
+    <div class="container d-flex align-items-start justify-content-between">
         <!-- Default Logo -->
         <a class="navbar-brand" href="index.php" aria-label="White Rose Cleaners">
             <img class="navbar-brand-logo p-0 m-0" src="assets/img/wrc/logo-no-bg.png" style="height: 60px;" alt="Logo">
@@ -46,10 +46,10 @@
                     <li class="hs-has-sub-menu nav-item">
                         <a id="<?php echo $navspecrow['category_slag'];?>" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" aria-expanded="false"><?php echo $navspecrow['category_name'];?></a>
                         <!-- Residential Services -->
-                        <div class="hs-sub-menu dropdown-menu" aria-labelledby="<?php echo $navspecrow['category_slag'];?>" style="min-width: 14rem;">
+                        <div class="hs-sub-menu dropdown-menu" aria-labelledby="<?php echo $navspecrow['category_slag'];?>" style="width:500px;">
                         <?php 
                                 $navspecrowid = $navspecrow['category_id'];
-                                $navservres = $conn->query("SELECT * FROM service WHERE category_id=$navspecrowid");
+                                $navservres = $conn->query("SELECT * FROM service WHERE category_id=$navspecrowid AND status=1");
                                 while($navservrow = $navservres->fetch_assoc()){
                                 ?>
                             <a class="dropdown-item" href="service.php?id=<?php echo $navservrow['service_id'];?>&<?php echo $navservrow['slag'];?>"><?php echo $navservrow['name'];?></a>

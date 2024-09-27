@@ -283,7 +283,7 @@ require "includes/connect.php";
     <!-- End Icon Blocks -->
 
     <!-- Clients -->
-    <div class="container content-space-2">
+    <div class="container content-space-2 d-none">
 
         <!-- Heading -->
         <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5">
@@ -327,7 +327,7 @@ require "includes/connect.php";
     <!-- Clients -->
 
     <!-- Team -->
-    <div class="container content-space-2 content-space-lg-3">
+    <div class="container content-space-2 content-space-lg-3 d-none">
         <!-- Heading -->
         <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
             <span class="text-cap">Meet Our Team</span>

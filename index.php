@@ -210,7 +210,6 @@ $catres = $conn->query("SELECT * FROM category WHERE cat_status=1");
                                     </span>
 
                                     <h3 class="card-title">We Deliver Quality You Can Trust</h3>
-                                    <p class="card-text">At White Rose Cleaners, we pride ourselves on delivering top-notch cleaning services that exceed expectations. Our commitmentHere’s the rest of the homepage code with context-specific updates for White Rose Cleaners:
                                     <p class="card-text">At White Rose Cleaners, we pride ourselves on delivering top-notch cleaning services that exceed expectations. Our commitment to quality, reliability, and customer satisfaction is what sets us apart in the cleaning industry.</p>
                                 </div>
                             </div>

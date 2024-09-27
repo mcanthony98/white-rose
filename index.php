@@ -392,53 +392,25 @@ $catres = $conn->query("SELECT * FROM category WHERE cat_status=1");
         <!-- End Heading -->
 
         <div class="row gx-3 mb-5 mb-md-9">
+
+        <?php
+        $blogres = $conn->query("SELECT * FROM blog WHERE blog_status=1 ORDER By blog_id DESC LIMIT 4");
+        while ($blogrow = $blogres->fetch_assoc()) {
+        ?>
             <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
                 <!-- Card -->
-                <a class="card card-transition h-100" href="single-blog.php?blog=cleaning-tips">
-                    <img class="card-img-top" src="assets/img/wrc/img-20.jpg" alt="Cleaning Tips">
+                <a class="card card-transition h-100" href="article.php?id=<?php echo $blogrow['blog_id']; ?>&<?php echo $blogrow['blog_slag']; ?>">
+                    <img class="card-img-top" src="uploads/<?php echo $blogrow['blog_image']; ?>" alt="<?php echo $blogrow['blog_title']; ?>">
                     <div class="card-body">
-                        <span class="card-subtitle text-primary">Tips</span>
-                        <h5 class="card-text lh-base">Top Cleaning Tips for a Spotless Home</h5>
+                        <span class="card-subtitle text-primary"><?php echo $blogrow['blog_category']; ?></span>
+                        <h5 class="card-text lh-base"><?php echo $blogrow['blog_title']; ?></h5>
                     </div>
                 </a>
                 <!-- End Card -->
             </div>
+            <?php } ?>
 
-            <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
-                <!-- Card -->
-                <a class="card card-transition h-100" href="single-blog.php?blog=eco-friendly">
-                    <img class="card-img-top" src="assets/img/wrc/img-24.jpg" alt="Eco-friendly Cleaning">
-                    <div class="card-body">
-                        <span class="card-subtitle text-primary">Eco-Friendly</span>
-                        <h5 class="card-text lh-base">The Benefits of Eco-Friendly Cleaning Products</h5>
-                    </div>
-                </a>
-                <!-- End Card -->
-            </div>
-
-            <div class="col-sm-6 col-lg-3 mb-3 mb-sm-0">
-                <!-- Card -->
-                <a class="card card-transition h-100" href="single-blog.php?blog=commercial-cleaning">
-                    <img class="card-img-top" src="assets/img/wrc/img-25.jpg" alt="Commercial Cleaning">
-                    <div class="card-body">
-                        <span class="card-subtitle text-primary">Business</span>
-                        <h5 class="card-text lh-base">Why Regular Office Cleaning is Crucial</h5>
-                    </div>
-                </a>
-                <!-- End Card -->
-            </div>
-
-            <div class="col-sm-6 col-lg-3">
-                <!-- Card -->
-                <a class="card card-transition h-100" href="single-blog.php?blog=holiday-cleaning">
-                    <img class="card-img-top" src="assets/img/wrc/img-16.jpg" alt="Holiday Cleaning">
-                    <div class="card-body">
-                        <span class="card-subtitle text-primary">Holiday</span>
-                        <h5 class="card-text lh-base">How to Prepare Your Home for the Holidays</h5>
-                    </div>
-                </a>
-                <!-- End Card -->
-            </div>
+            
         </div>
         <!-- End Row -->
 

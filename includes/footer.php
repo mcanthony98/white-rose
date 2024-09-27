@@ -19,7 +19,7 @@
                 <!-- Contact Info -->
                 <ul class="list-unstyled list-py-1">
                     <li><a class="link-sm link-secondary" href="#"><i class="bi-geo-alt-fill me-1"></i> 1234 Cleaning Ave, CleanCity</a></li>
-                    <li><a class="link-sm link-secondary" href="tel:+1234567890"><i class="bi-telephone-inbound-fill me-1"></i> +1 (234) 567-890</a></li>
+                    <li><a class="link-sm link-secondary" href="tel:+447720875174"><i class="bi-telephone-inbound-fill me-1"></i> +44 772 0875174</a></li>
                     <li><a class="link-sm link-secondary" href="mailto:info@whiterosecleaners.co.uk"><i class="bi-envelope-fill me-1"></i> info@whiterosecleaners.co.uk</a></li>
                 </ul>
                 <!-- End Contact Info -->

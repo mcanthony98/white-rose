@@ -56,7 +56,7 @@ $row = $profres->fetch_assoc();
 
                         <dl class="row">
                             <dt class="col-sm-4">Service Area</dt>
-                            <dd class="col-sm-8">Available across various areas across the UK</dd>
+                            <dd class="col-sm-8">Available across various areas in the UK</dd>
                         </dl>
                         <!-- End Row -->
 
@@ -120,7 +120,7 @@ $row = $profres->fetch_assoc();
                                         </span>
 
                                         <h3 class="card-title">Tailored Services for your spaces </h3>
-                                        <p class="card-text">Our <?php echo $row['name'] ;?> service covers everything from daily maintenance to deep cleaning. We dust, disinfect, vacuum, and sanitize all areas, including workstations, communal spaces, and high-touch surfaces to ensure a healthy, welcoming environment. We customize our approach based on your specific needs, ensuring your space remains spotless, organized, and ready for success.</p>
+                                        <p class="card-text">Our <?php echo $row['name'] ;?> service is designed to provide a professional and thorough solution for your needs. At White Rose Cleaners, we ensure every task is completed with precision and attention to detail. Our expert team offers tailored service to meet your specific requirements, ensuring a spotless, well-kept environment that promotes health, comfort, and satisfaction.</p>
                                     </div>
                                 </div>
                                 <!-- End Card -->
